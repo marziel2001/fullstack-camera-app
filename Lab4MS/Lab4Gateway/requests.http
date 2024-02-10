@@ -1,0 +1,116 @@
+### brands:
+### Nikon 91d92bfc-a095-498d-926d-d7199ae2294f
+### Sony 94c2b18d-9218-476e-8d66-5a2543ee6068
+### Pentax bcc79c1f-71f0-4ae9-b85c-fd4f03acdb14
+
+### Get all brands
+GET http://localhost:8084/api/brands
+
+### Get all models
+GET http://localhost:8084/api/models
+
+### Get single brand: Sony
+GET http://localhost:8084/api/brands/94c2b18d-9218-476e-8d66-5a2543ee6068
+### Get single brand: Nikon
+GET http://localhost:8084/api/brands/91d92bfc-a095-498d-926d-d7199ae2294f
+
+### Get NIKON models
+GET http://localhost:8084/api/brands/91d92bfc-a095-498d-926d-d7199ae2294f/models
+### Get SONY models
+GET http://localhost:8084/api/brands/94c2b18d-9218-476e-8d66-5a2543ee6068/models
+
+### Get single brand - non existing
+GET http://localhost:8084/api/brands/94c2b18d-9218-476e-8d16-5a2543ee6068
+
+### Put new model
+PUT http://localhost:8084/api/models
+Content-Type: application/json
+
+{
+  "name": "D5",
+  "price": 11299.95,
+  "announceYear": 2016,
+  "brand": "91d92bfc-a095-498d-926d-d7199ae2294f"
+}
+
+### Patch brand
+PATCH http://localhost:8084/api/brands/91d92bfc-a095-498d-926d-d7199ae2294f
+Content-Type: application/json
+
+{
+  "name": "Nikon",
+  "yearOfEst": 1920,
+  "country": "Polonia",
+  "brandValueDollars": 1224000.00
+}
+
+### Get single model
+GET http://localhost:8084/api/models/f4f43786-7768-46cf-bdd9-50495b007821
+
+### Put new brand: PENTAX
+PUT http://localhost:8084/api/brands
+Content-Type: application/json
+
+{
+  "name": "Pentax",
+  "yearOfEst": 1970,
+  "country": "USA",
+  "brandValueDollars": 22000000.00
+}
+
+### Get single brand: PENTAX
+GET http://localhost:8084/api/brands
+
+### Put new model to new brand PENTAX K6
+PUT http://localhost:8084/api/models/f08212ae-0f32-4c0d-b000-f975fcff0bb9
+Content-Type: application/json
+
+{
+  "name": "K6",
+  "price": 1299.95,
+  "announceDate": 2016,
+  "brand": "a409620c-e4b0-4c9c-9c8f-d53c2fd59539"
+}
+
+### Update brand PENTAX
+PATCH http://localhost:8084/api/brands/bcc79c1f-71f0-4ae9-b85c-fd4f03acdb14
+Content-Type: application/json
+
+{
+  "name": "Pentax",
+  "yearOfEst": 1967,
+  "country": "USA",
+  "brandValueDollars": 25400000.00
+}
+
+### Update model NIKON D5
+PATCH http://localhost:8084/api/models/f08221ae-0f32-4c0d-b000-f975fcff0bb9
+Content-Type: application/json
+
+{
+  "name": "D6",
+  "price": 11299.95,
+  "announceDate": 2019,
+  "brand": "91d92bfc-a095-498d-926d-d7199ae2294f"
+}
+
+### Delete brand NIKON
+DELETE http://localhost:8084/api/brands/91d92bfc-a095-498d-926d-d7199ae2294f
+### DELETE brand SONY
+DELETE http://localhost:8084/api/brands/94c2b18d-9218-476e-8d66-5a2543ee6068
+
+### Get brands models NIKON
+GET http://localhost:8084/api/brands/91d92bfc-a095-498d-926d-d7199ae2294f/models
+### Get brands models SONY
+GET http://localhost:8084/api/brands/94c2b18d-9218-476e-8d66-5a2543ee6068/models
+### Get brands models PENTAX
+GET http://localhost:8084/api/brands/bcc79c1f-71f0-4ae9-b85c-fd4f03acdb14/models
+
+### Delete model
+DELETE http://localhost:8084/api/models/99be6917-1f24-4a0e-b5b4-377cedc24ce5
+### Delete model
+DELETE http://localhost:8084/api/models/8d11bde4-a1c6-434d-b799-2e1ed67604d4
+### Delete model
+DELETE http://localhost:8084/api/models/f4f43786-7768-46cf-bdd9-50495b007821
+### Delete model not existing
+DELETE http://localhost:8084/api/models/f4f43786-7768-46cf-aaaa-50495b007821

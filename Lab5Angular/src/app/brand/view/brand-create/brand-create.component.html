@@ -1,0 +1,50 @@
+<article>
+    <header><h2>Create brand</h2></header>
+
+    <form class="container"  #form="ngForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="name">name:</label>
+                    <input id="name" name="name" [(ngModel)]="brand.name"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="yearOfEst">year of establishment:</label>
+                    <input id="yearOfEst" name="yearOfEst" [(ngModel)]="brand.yearOfEst"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="country">country:</label>
+                    <input id="country" name="country" [(ngModel)]="brand.country"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 p-2">
+                <div>
+                    <label for="brandValueDollars">brand value $:</label>
+                    <input id="brandValueDollars" name="brandValueDollars" [(ngModel)]="brand.brandValueDollars"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2 p-2">
+                <button [classList]="'greenButton'"  type="submit">Add brand</button>
+            </div>
+            <div class="col-2 p-2">
+                <button [classList]="'blueButton'" type="button" (click)="form.resetForm()">Reset</button>
+            </div>
+        </div>
+    </form>
+</article>

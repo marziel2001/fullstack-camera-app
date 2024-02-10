@@ -1,0 +1,76 @@
+/* Styl dla całej strony */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+article {
+    position: relative;
+}
+
+/* Styl dla nagłówka */
+header h2 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styl dla rzędów i kolumn */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.col-4 {
+    width: 100%;
+    text-align: left;
+}
+
+/* Styl dla kolumn o mniejszej szerokości */
+.col-6 {
+    width: 50%;
+}
+
+/* Styl dla odstępów między wierszami */
+.mb-2 {
+    margin-bottom: 10px;
+}
+
+/* Styl dla spanów wewnątrz kolumn */
+span {
+    font-weight: bold;
+}
+
+
+
+/* Styl dla tabeli */
+table {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}

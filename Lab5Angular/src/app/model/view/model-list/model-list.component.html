@@ -1,0 +1,34 @@
+<article class="text--justified">
+  <header><h2>Models:</h2></header>
+
+  <table *ngIf="models">
+    <thead>
+    <tr>
+      <th>Name</th>
+<!--      <th>Id</th>-->
+      <th>View</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let model of models.models">
+      <td>
+        {{model.name}}
+      </td>
+<!--      <td>-->
+<!--        {{model.id}}-->
+<!--      </td>-->
+      <td>
+        <a [routerLink]="['/models', model.id]">View</a>
+      </td>
+      <td>
+        <a [routerLink]="['/brands', brandsUuid, 'models', model.id, 'edit']">Edit</a>
+      </td>
+      <td>
+        <button [classList]="'blueButton'" (click)="onDelete(model)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</article>

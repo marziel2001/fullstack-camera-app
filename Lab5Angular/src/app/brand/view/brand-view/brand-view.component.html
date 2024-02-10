@@ -1,0 +1,41 @@
+<article *ngIf="brand">
+    <header><h2>{{brand.name}}</h2></header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="row mb-2">
+                    <div class="col-6">
+                        year of establishment
+                    </div>
+                    <div class="col-6">
+                        <span>{{brand.yearOfEst}}</span>
+                    </div>
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-6">
+                        Country
+                    </div>
+                    <div class="col-6">
+                        <span>{{brand.country}}</span>
+                    </div>
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-6">
+                        Brand value
+                    </div>
+                    <div class="col-6">
+                        <span>{{brand.brandValueDollars}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+            <a alt="Add new model" [classList]="'rainbow-button'" [routerLink]="['/models-create', brand.uuid]"></a>
+        </p>
+        <app-model-list></app-model-list>
+    </div>
+
+</article>

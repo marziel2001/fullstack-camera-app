@@ -1,0 +1,38 @@
+### Get all brands
+GET http://localhost:8082/api/brands
+
+### Get single brand SONY
+GET http://localhost:8082/api/brands/94c2b18d-9218-476e-8d66-5a2543ee6068
+
+### Get single brand - non existing
+GET http://localhost:8082/api/brands/94c2b18d-9218-476e-8d16-5a2543ee6068
+
+### Put new brand PENTAX
+PUT http://localhost:8082/api/brands/bcc79c1f-71f0-4ae9-b85c-fd4f03acdb14
+Content-Type: application/json
+
+{
+  "name": "Pentax",
+  "yearOfEst": 1970,
+  "country": "USA",
+  "brandValueDollars": 22000000.00
+}
+
+### Get single brand PENTAX
+GET http://localhost:8082/api/brands/bcc79c1f-71f0-4ae9-b85c-fd4f03acdb14
+
+### Update brand
+PATCH http://localhost:8082/api/brands/bcc79c1f-71f0-4ae9-b85c-fd4f03acdb14
+Content-Type: application/json
+
+{
+  "name": "Pentax",
+  "yearOfEst": 1967,
+  "country": "USA",
+  "brandValueDollars": 25400000.00
+}
+
+### Delete brand
+DELETE http://localhost:8082/api/brands/91d92bfc-a095-498d-926d-d7199ae2294f
+###
+DELETE http://localhost:8082/api/brands/94c2b18d-9218-476e-8d66-5a2543ee6068

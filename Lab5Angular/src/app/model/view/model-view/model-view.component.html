@@ -1,0 +1,39 @@
+<script src="../../model/model-details.ts"></script>
+<article *ngIf="model">
+
+    <div class="container">
+        <header><h2>{{model.name}}</h2></header>
+
+        <div class="row">
+            <div class="col-4">
+<!--                <div class="row mb-2">-->
+<!--                    <div class="col-6">-->
+<!--                        id-->
+<!--                    </div>-->
+<!--                    <div class="col-6">-->
+<!--                        <span>{{model.uuid}}</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+                <div class="row mb-2">
+                    <div class="col-6">
+                        price
+                    </div>
+                    <div class="col-6">
+                        <span>{{model.price}} $</span>
+                    </div>
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-6">
+                        announce year
+                    </div>
+                    <div class="col-6">
+                        <span>{{model.announceYear}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>

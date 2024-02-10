@@ -1,0 +1,125 @@
+[33mcommit da8e3f69c076036b863556ff13f76776f57fccd4[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sun Dec 3 15:27:10 2023 +0100
+
+    Revert "brand module done"
+    
+    This reverts commit a6eb97cf471633765d7108191ed0240bdcb022f1.
+
+[33mcommit dc76e46d5ed3bc498bd88614cf83ab9c7a4c80d4[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sun Dec 3 15:27:09 2023 +0100
+
+    Revert "brand rename"
+    
+    This reverts commit 34ed97799755b7edd8558ddf704c93cf387463a7.
+
+[33mcommit d1be1b840e341f3507fa0b213a438b0d7fea31ff[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sun Dec 3 15:27:09 2023 +0100
+
+    Revert "trying to make model work"
+    
+    This reverts commit 59727e22c0706e2042f00888655feccab89a78e2.
+
+[33mcommit b256471734d86708721f20efc0fb8e23a4db9e81[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sun Dec 3 15:27:08 2023 +0100
+
+    Revert "added event delete to brand"
+    
+    This reverts commit 08a277c0968d87c971bb308abbba4cb0f15777e7.
+
+[33mcommit 1eff468a77d02c29b72dce83cb76a24f37995d45[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sun Dec 3 15:27:07 2023 +0100
+
+    Revert "fixed model and now model and brand work but dont communicate"
+    
+    This reverts commit 990d69bd0d4dc19b9a6184e465526f59bd23dc25.
+
+[33mcommit e3652a50a376743f15a244493f6f74227de53356[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sun Dec 3 15:27:07 2023 +0100
+
+    Revert "stage 1 complete, little visual changes of the code"
+    
+    This reverts commit 838b13deeb4d5c0b6e3bb368a09c03cf80ba093a.
+
+[33mcommit b89cd97ab4a6939e52fb7a575a70658e45df793a[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sun Dec 3 15:27:06 2023 +0100
+
+    Revert "trying to make put work but dont know how"
+    
+    This reverts commit 0b142223b06ac44f90701fcbaeccc1a16f2490bf.
+
+[33mcommit 07c2c85346bfcf83e1b9f2a3be86fcdbaf651dbc[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sun Dec 3 15:27:05 2023 +0100
+
+    Revert "tried to make PUT controller in model/brand simplified class"
+    
+    This reverts commit 2335004be832b0a1772e15aac6ea15843aacd1a5.
+
+[33mcommit 2f0fa3e675190934624ee1873bea543e285c915a[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sun Dec 3 15:27:05 2023 +0100
+
+    Revert "Whole task finished. Puting new elements to new models fixed"
+    
+    This reverts commit 88f3bfca6db715cd0e774d64eb641f1b9f0b9a90.
+
+[33mcommit 88f3bfca6db715cd0e774d64eb641f1b9f0b9a90[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sun Dec 3 15:16:00 2023 +0100
+
+    Whole task finished. Puting new elements to new models fixed
+
+[33mcommit 2335004be832b0a1772e15aac6ea15843aacd1a5[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sat Nov 18 20:14:52 2023 +0100
+
+    tried to make PUT controller in model/brand simplified class
+
+[33mcommit 0b142223b06ac44f90701fcbaeccc1a16f2490bf[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sat Nov 18 18:44:31 2023 +0100
+
+    trying to make put work but dont know how
+
+[33mcommit 838b13deeb4d5c0b6e3bb368a09c03cf80ba093a[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sat Nov 18 16:50:48 2023 +0100
+
+    stage 1 complete, little visual changes of the code
+
+[33mcommit 990d69bd0d4dc19b9a6184e465526f59bd23dc25[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sat Nov 18 16:18:26 2023 +0100
+
+    fixed model and now model and brand work but dont communicate
+
+[33mcommit 08a277c0968d87c971bb308abbba4cb0f15777e7[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sat Nov 18 03:40:18 2023 +0100
+
+    added event delete to brand
+
+[33mcommit 59727e22c0706e2042f00888655feccab89a78e2[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sat Nov 18 03:34:57 2023 +0100
+
+    trying to make model work
+
+[33mcommit 34ed97799755b7edd8558ddf704c93cf387463a7[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sat Nov 18 03:34:39 2023 +0100
+
+    brand rename
+
+[33mcommit a6eb97cf471633765d7108191ed0240bdcb022f1[m
+Author: Marcel <marziel2001@gmail.com>
+Date:   Sat Nov 18 02:33:20 2023 +0100
+
+    brand module done

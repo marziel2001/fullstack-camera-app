@@ -1,0 +1,50 @@
+### Get all models
+GET http://localhost:8081/api/models
+
+### Get single model
+GET http://localhost:8081/api/models/729e14eb-fb57-46e0-b88b-ab601fec0c50
+
+### Get Nikon brands models
+GET http://localhost:8081/api/brands/91d92bfc-a095-498d-926d-d7199ae2294f/models
+
+### Put new model
+PUT http://localhost:8081/api/models/f08221ae-0f32-4c0d-b000-f975fcff0bb9
+Content-Type: application/json
+
+{
+  "name": "D5",
+  "price": 11299.95,
+  "announceDate": 2016,
+  "brand": "91d92bfc-a095-498d-926d-d7199ae2294f"
+}
+
+### Put new model to non existing brand
+PUT http://localhost:8081/api/models/f08221ae-0f32-4c0d-b000-f975fcff0bb9
+Content-Type: application/json
+
+{
+  "name": "D7",
+  "price": 11299.95,
+  "announceDate": 2016,
+  "brand": "91d92bfc-a095-498d-926d-aaa99ae2294f"
+}
+
+### Update model
+PATCH http://localhost:8081/api/models/f08221ae-0f32-4c0d-b000-f975fcff0bb9
+Content-Type: application/json
+
+{
+  "name": "D6",
+  "price": 11299.95,
+  "announceDate": 2019,
+  "brand": "91d92bfc-a095-498d-926d-d7199ae2294f"
+}
+
+### Delete model
+DELETE http://localhost:8081/api/models/99be6917-1f24-4a0e-b5b4-377cedc24ce5
+### Delete model
+DELETE http://localhost:8081/api/models/8d11bde4-a1c6-434d-b799-2e1ed67604d4
+### Delete model
+DELETE http://localhost:8081/api/models/f4f43786-7768-46cf-bdd9-50495b007821
+### Delete model non existing
+DELETE http://localhost:8081/api/models/f4f43786-7768-46cf-aaaa-50495b007821
